@@ -639,6 +639,10 @@ declare module "react-native-google-places" {
     ): Promise<
       Pick<CurrentPlace, (typeof placeFields)[number] | "likelihood">[]
     >;
+                            
+    public beginAutocompleteSession();
+
+    public cancelAutocompleteSession();
   }
 
   const _: RNGooglePlaces;
